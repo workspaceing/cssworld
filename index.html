@@ -168,9 +168,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script type="text/javascript"> functiondisplayIP(json) {   var ipAddress = json.ip; // 获取访客的IP地址document.getElementById("visitorIP").innerHTML = ipAddress; // 将IP地址显示在网页上 } </script> 
   <scripttype="text/javascript"src="https://api.ipify.org?format=jsonp&callback=displayIP"></script>
       <!-- test -->
-    Dim httpClient As New System.Net.Http.HttpClient
-Dim ip As String = Await httpClient.GetStringAsync("https://api.ipify.org")
-Console.WriteLine($"My public IP address is: {ip}")
        <!-- test -->
     <script type="application/javascript">
   function getIP(json) {
